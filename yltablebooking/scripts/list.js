@@ -18,7 +18,7 @@ function GetBookings() {
               var gPax = json.bookings[i].pax;
               var gId = json.bookings[i].id;
               var gRemarks = json.bookings[i].remarks;
-              var buttonId = "delete" + gId;
+              
 
               let row = bookings.insertRow(bookings.rows.length);
               row.insertCell(0).innerHTML = gId;
@@ -29,16 +29,8 @@ function GetBookings() {
               
 }
 
-          for (let j = 0; j < bookingIds.length; j++) {
-              //console.log(bookingIds[j]);
-              let el = document.getElementById(bookingIds[j]);
-              el.addEventListener("click", function () {
-                  let theId = bookingIds[j].replace("delete", "");
-                  DeleteBooking(theId);
-              });
-          }
+        
 
-
-      });
+     
 }
 
