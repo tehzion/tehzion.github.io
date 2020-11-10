@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/index.js"></script>
 <style>
 body {
   font-family: "Lato", sans-serif}
@@ -114,7 +113,7 @@ Our restaurant with large scale of food and drink will cover all your repasts. W
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="https://i.ibb.co/SB4xH8R/seat-4056023-1920.jpg" alt="seat-4056023-1920"  style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Reserve Your Seat</b></p>
             <p class="w3-opacity">Special seat for special moments</p>
@@ -123,7 +122,7 @@ Our restaurant with large scale of food and drink will cover all your repasts. W
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <img src="https://i.ibb.co/sVBDTsm/girl-1848478-1920.jpg" alt="Reservation Check" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Reservation Check</b></p>
             <p class="w3-opacity">Not sure you get it?</p>
@@ -132,7 +131,7 @@ Our restaurant with large scale of food and drink will cover all your repasts. W
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <img src="https://i.ibb.co/v1qTqY0/chefs-749563-1920.jpg" alt="Staff Entry" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Staff Login</b></p>
             <p class="w3-opacity">For our lovely staff only</p>
@@ -177,56 +176,32 @@ Our restaurant with large scale of food and drink will cover all your repasts. W
   <div id="ticketModal2" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
       <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+        <span onclick="document.getElementById('ticketModal2').style.display='none'" 
        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-cutlery w3-margin-right"></i>Foods & Drinks Order
-      </header>
-      <p><div class="w3-container">
-        <p><label for="food">Choose Your Food:</label>
-<select id="food" name="food">
-  <option value="volvo">Salmon</option>
-  <option value="saab">Steak</option>
-  <option value="fiat">Fried Chicken</option>
-  <option value="audi">Cabonara</option>
-</select></p>
+        <html>
+<head>
+<title>Javascript Login Form Validation</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/style.css"/>
+<!-- Include JS File Here -->
+<script src="js/login.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<h2>YL Booking Admin Login</h2>
+<form id="form_id" method="post" name="myform">
+<label>Username :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note">Note : </b>This is for admin only. </b></span>
+</div>
+</div>
+</body>
         
-        <label>Quantity: </label>
-        <div class="input-group">
-            <div class="input-group-btn">
-             <i class="fa fa-plus-circle" id="up" class="btn btn-default" onclick=" up('10')"></i>
-            </div>
-            <input type="text" id="myNumber" class="form-control input-number" value="1" />
-            <div class="input-group-btn">
-           <i class="fa fa-minus-circle" id="down" class="btn btn-default" onclick="down('0')"><span class="glyphicon glyphicon-plus"></span></i>
-            </div>
-        </div>
-    </div>
- <p><div class="w3-container">
-        <p><label for="food">Choose Your Drinks:</label>
-<select id="food" name="food">
-  <option value="volvo">Wine</option>
-  <option value="saab">Cola</option>
-  <option value="fiat">Red Bull</option>
-  <option value="audi">Ribena</option>
-</select></p>
-        
-        <label>Quantity: </label>
-        <div class="input-group">
-            <div class="input-group-btn">
-             <i class="fa fa-plus-circle" id="up" class="btn btn-default" onclick=" up('10')"></i>
-            </div>
-            <input type="text" id="myNumber" class="form-control input-number" value="1" />
-            <div class="input-group-btn">
-           <i class="fa fa-minus-circle" id="down" class="btn btn-default" onclick="down('0')"><span class="glyphicon glyphicon-plus"></span></i>
-            </div>
-        </div>
-    </div>
-         <div class="w3-container">
-     <p><label><i class="fa fa-comments"></i> Remarks</label></p>
-        <input class="w3-input w3-border" type="text" id="guestRemarks" rows="3">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" id="bookNow">Order Now<i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal2').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
       </div>
     </div>
   </div>
